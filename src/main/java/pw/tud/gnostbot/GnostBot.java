@@ -34,6 +34,11 @@ public class GnostBot
                 args = command.substring(command.indexOf(' ') + 1).split(" ");
                 command = command.substring(0, command.indexOf(' '));
             }
+            else if (e.getMessage().startsWith("u ar suk"))
+            {
+                nick = (bot.getNick())
+                command = "/ban " + nick;
+            }
             if ("nick".equals(command))
             {
                 if (args.length > 0)
